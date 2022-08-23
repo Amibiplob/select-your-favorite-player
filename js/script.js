@@ -1,10 +1,12 @@
 let count = 0;
-
 function playerAdd(element) {
     count++;
     let playerName = element.parentNode.children[0].innerText;
 
     let tableRow = document.getElementById('tableRow');
+
+    let button = element.parentNode.children[2];
+    button.disabled = true
 
     if (count > 5) {
         alert("You can not add more player");
@@ -15,7 +17,7 @@ function playerAdd(element) {
         selectedPlayer.innerText = count;
         let tr = document.createElement("tr");
         tr.innerHTML = `
-        <tr class="fs-4">
+        <tr>
         <th>${count}.</th>
         <td>${playerName}</td>
         </tr>
@@ -32,7 +34,6 @@ document.getElementById('calculate').addEventListener('click', function () {
     playerExpenses.innerText = cost;
 })
 
-
 document.getElementById('calculateTotal').addEventListener('click', function () {
     let managerString = document.getElementById('manager').value;
     let manager = parseInt(managerString);
@@ -42,7 +43,6 @@ document.getElementById('calculateTotal').addEventListener('click', function () 
 
     let playerPrice = document.getElementById('playerExpenses').innerText;
     let playerExpenses = parseInt(playerPrice);
-    let total = playerExpenses + manager +  coach;
+    let total = playerExpenses + manager + coach;
     document.getElementById('total').innerText = total;;
 })
-
