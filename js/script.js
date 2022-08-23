@@ -1,4 +1,5 @@
 let count = 0;
+
 function playerAdd(element) {
     count++;
     let playerName = element.parentNode.children[0].innerText;
