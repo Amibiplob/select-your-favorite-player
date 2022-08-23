@@ -109,11 +109,9 @@
                                     <tbody id="tableRow" class="fs-4">
                                         <!-- <tr>
                                             <th>1 .</th>
-                                            <td>Mark</td>
+                                            <td>Biplob</td>
                                         </tr> -->
-                                    </tbody>
-                                      
-                                      
+                                    </tbody>                                    
                                     </table>
                                 </div>
                             </div>
@@ -129,34 +127,32 @@
                                         <h5 class="">
                                             Per Player
                                         </h5>
-                                        <input class="border border-light bg-dark text-white" type="text">
+                                        <input id="perPlayer" class="border border-light bg-dark text-white" type="text">
                                     </div>
-                                    <button type="button" class="btn btn-primary w-100 my-4 fs-4">
+                                    <button id="calculate" type="button" class="btn btn-primary w-100 my-4 fs-4">
                                         Calculate
                                     </button>
-
-
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h5>
                                             Player Expenses
                                          </h5>
                                          <h5>
-                                            $5000
+                                            $<span id="playerExpenses">00</span>
                                          </h5>
                                     </div>      
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h5 class="my-4">
                                             Manager
                                         </h5>
-                                        <input class="border border-light bg-dark text-white" type="text">
+                                        <input id="manager" class="border border-light bg-dark text-white" type="text">
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h5 class="">
                                             Coach
                                         </h5>
-                                        <input class="border border-light bg-dark text-white" type="text">
+                                        <input id="coach" class="border border-light bg-dark text-white" type="text">
                                     </div>
-                                    <button type="button" class="btn btn-primary w-100 fs-4 my-4">
+                                    <button id="calculateTotal" type="button" class="btn btn-primary w-100 fs-4 my-4">
                                         Calculate Total
                                     </button>
 
@@ -165,7 +161,7 @@
                                             Total
                                          </h5>
                                          <h5 class="text-danger">
-                                            $ <span> 5000</span>
+                                            $<span id="total">000</span>
                                          </h5>
                                     </div>
                                    
