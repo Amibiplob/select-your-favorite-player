@@ -26,6 +26,7 @@ function playerAdd(element) {
 document.getElementById('calculate').addEventListener('click', function () {
     let perPlayerString = document.getElementById('perPlayer').value;
     let perPlayer = parseInt(perPlayerString);
+    let count = document.getElementById('selected').innerText;
     let cost = perPlayer * count;
     let playerExpenses = document.getElementById('playerExpenses');
     playerExpenses.innerText = cost;
@@ -39,15 +40,9 @@ document.getElementById('calculateTotal').addEventListener('click', function () 
     let coachString = document.getElementById('coach').value;
     let coach = parseInt(coachString);
 
-    let playerExpenses = document.getElementById('playerExpenses');
-    playerExpenses.innerText = cost;
-
-    let total = perPlayer * count;
-    document.getElementById('total').innerText = total;
-
-
-
-
-    console.log(playerExpenses);
+    let playerPrice = document.getElementById('playerExpenses').innerText;
+    let playerExpenses = parseInt(playerPrice);
+    let total = playerExpenses + manager +  coach;
+    document.getElementById('total').innerText = total;;
 })
 
